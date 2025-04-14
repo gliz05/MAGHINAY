@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="iframe.css">
+
+</head>
+<style>
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: orangered;
+}
+a:active{
+    color: gray;
+}
+body{
+    background-image: url("Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.top-bar h2 {
+    font-family: "Press Start 2P",'Courier New', Courier, monospace;
+    margin: 0;
+    font-size: 22px;
+    color: burlywood;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.nav-links {
+    font-family: 'Courier New', Courier, monospace;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sign-up, .log-in {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.log-in {
+    background-color: #a36f4d;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.cart-icon {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.mdags{
+    border-style: solid;
+    border: 3px;
+    border-radius: 50%;
+}
+</style>
+<header>
+    <div class="top-bar">
+        <h2>Vape Lounge</h2>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="Welcome.html" target="Display">Home</a></li>
+            <li><a href="Menu.html" target="Display">Our Menu</a></li>
+            <li><a href="ContactUs.html" target="Display">Contact Us</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <a href="SignUp.html" class="sign-up" target="Display">Sign Up</a>
+            <a href="Login.html" class="log-in" target="Display">
+                <img src="Profile.jpg" width="20px" height="20px" class="mdags"> Log In
+            </a>
+        </div>
+    </nav>
+</header>
+    
+<body>
+    <iframe src="Welcome.html"  frameborder="0px" width="100%" height="562" name="Display"></iframe>
+</body>
+</html>
