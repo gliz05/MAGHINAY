@@ -1,0 +1,176 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Web Page</title>
+
+    <style>
+
+        body {
+
+            font-family: 'Times New Roman', Times, serif;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+        .container {
+
+            width: 100%;
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            padding: 20px;
+
+        }
+
+        .login-page, .content-page {
+
+            display: none;
+
+        }
+
+        .login-page.active, .content-page.active {
+
+            display: block;
+
+        }
+
+        .login-form {
+
+            max-width: 300px;
+
+            margin: 100px auto;
+
+            padding: 20px;
+
+            border: 1px solid #2c1388;
+
+            border-radius: 5px;
+
+            background-color: #7b5f8d;
+
+        }
+
+        .login-form input {
+
+            width: 100%;
+
+            padding: 10px;
+
+            margin: 10px 0;
+
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+
+        }
+
+        .login-form button {
+
+            width: 100%;
+
+            padding: 10px;
+
+            background-color: #007BFF;
+
+            color: white;
+
+            border: none;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+        }
+
+        .content-page {
+
+            text-align: center;
+
+            padding: 50px;
+
+        }
+
+        .content-page img {
+
+            max-width: 100%;
+
+            height: auto;
+
+        }
+
+        @media (max-width: 600px) {
+
+            body {
+
+                background-color: #e0f7fa;
+
+            }
+
+            .login-form {
+
+                margin: 50px auto;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="login-page active">
+
+            <form class="login-form" onsubmit="showContentPage(event)">
+
+                <h2>Login</h2>
+
+                <input type="text" placeholder="Username" required>
+
+                <input type="password" placeholder="Password" required>
+
+                <button type="submit">Login</button>
+
+            </form>
+
+        </div>
+
+        <div class="content-page">
+
+            <h1>Welcome to africa philippines</h1>
+
+            <p> hh</p>
+
+            <img src="https://www.africa-philippines.com/wp-content/uploads/2019/07/africa-philippines-logo.png" alt="Africa Philippines">
+
+    </div>
+
+    <script>
+
+        function showContentPage(event) {
+
+            event.preventDefault();
+
+            document.querySelector('.login-page').classList.remove('active');
+
+            document.querySelector('.content-page').classList.add('active');
+
+        }
+
+    </script>
+
+</body>
+</html>
