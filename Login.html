@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vape Lounge Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container { 
+    background: rgba(20, 20, 20, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 0 15px rgba(255, 72, 0, 0.5);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: orangered;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #333;
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-style: solid;
+    border-color: orangered;
+    border: 10px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    background: orangered;
+    text-shadow: 5px 5px 5px black;
+}
+
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: orangered;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+</style>
+<body>
+
+    <div class="login-container">
+        <h1>Vape Lounge</h1>
+        <h2>Login</h2>
+        <form>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your Username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your Password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p class="register-link">Don't have an account? <a href="SignUp.html">Sign Up</a></p>
+        </form>
+    </div>
+
+</body>
+</html>

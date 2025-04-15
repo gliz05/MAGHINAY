@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Press+Start+2P&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="welcome.css">
+
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-text {
+    max-width: 40%;
+    font-family: "Press Start 2P",'Courier New', Courier, monospace;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 5px 5px 4px black;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 15px 0;
+    text-shadow: 5px 5px 4px black;
+}
+
+button {
+    background-color: #c38a5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #a36f4d;
+    text-shadow: 5px 5px 4px black;
+}
+
+/* Product Showcase */
+.product-showcase {
+    display: flex;
+    gap: 20px;
+}
+
+.product {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 270px;
+}
+
+.product:hover{
+    text-shadow: 3px 3px 10px burlywood;
+}
+.product h3 {
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 14px;
+}
+
+.product a {
+    color: #c38a5f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product a:hover {
+    text-decoration: underline;
+}
+</style>
+<body>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Vaping <br> do the talking</h1><br>
+            <br>
+            <br>
+            <p>Experience premium flavors and a chill ambiance.</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="product-showcase">
+            <div class="product">
+                <img src="Product.jpg" alt="Premium Vape Flavor">
+                <h3>Premium Vape</h3>
+                <p>Rich and smooth flavors for a perfect vape session.</p>
+                <a href="#">Find Out More</a>
+            </div>
+
+            <div class="product">
+                <img src="Milktea2.jpg" alt="Signature Drinks">
+                <h3>Signature Drinks</h3>
+                <p>Unique refreshments to complement your experience.</p>
+                <a href="#">Find Out More</a>
+            </div>
+
+            <div class="product">
+                <img src="Shirt.jpeg" alt="Shirt">
+                <h3>Shirts</h3>
+                <p>Stylish and comfortable designs to match your vibe.</p>
+                <a href="#">Find Out More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

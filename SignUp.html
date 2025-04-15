@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Vape Lounge</title>
+    <link rel="stylesheet" href="SingUp.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba( 0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    display: flex;
+    width: 800px;
+    background: rgba( 0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(255, 72, 0, 0.5);
+}
+
+.logo-section {
+    width: 40%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: black;
+}
+
+.logo-section img {
+    max-width: 80%;
+    border-radius: 30px;
+}
+
+.signup-form {
+    width: 60%;
+    padding: 30px;
+}
+
+.signup-form h2 {
+    margin-bottom: 10px;
+    color: #c38a5f;
+}
+
+.signup-form p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.signup-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.signup-form input {
+    width: 93%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    border: 1px;
+    border-style: solid;
+    border-color: orangered;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.signup-form button:hover {
+    background: orangered;
+}
+
+.signup-form a {
+    color: orangered;
+    text-decoration: none;
+}
+</style>
+<body>
+
+<div class="signup-container">
+    <div class="logo-section">
+        <img src="Logo.jpg" alt="Vape Lounge Logo">
+    </div>
+
+    <div class="signup-form">
+        <h2>Sign Up</h2>
+        <p>Create an account to explore the Vape Lounge experience.</p>
+        
+        <form action="#">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Create a password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+
+            <button type="submit">Sign Up</button>
+
+            <p>Already have an account? <a href="Login.html">Log in</a></p>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
